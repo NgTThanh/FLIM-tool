@@ -53,7 +53,7 @@ def fit_curve(data, bin_width, i, j):
 def phasor(data, bin_width, i,j):
     photon_count = data[i, j, :]
 
-    # Run the triple integral fitting engine
+    # Run the phasor fitting engine
     fit_result = GCI_Phasor(
         period=bin_width,
         photon_count=photon_count,
@@ -74,7 +74,7 @@ def phasor_map(data, bin_width):
     return lifetime_map
 
 def phasor_curve(data, bin_width, i, j):
-    # Run the triple integral fitting engine
+    # Run the phasor fitting engine
     fit_result = GCI_Phasor(
         period=bin_width,
         photon_count=data[i, j, :],
