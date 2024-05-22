@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import filedialog
-from pakiet_studencki.code import get_shifts as gs, process_counts as pc
-from pakiet_studencki.code.sofism_lib import process_measurement_joblib
-from pakiet_studencki.code.sofism_lib.helpers import visualize, spad_sum_fig
-from pakiet_studencki.code.sofism_lib.core import get_corrs, sofism
-from pakiet_studencki.code.sofism_lib.params import Parameters
-from pakiet_studencki.code import lifetimefit as lf
+import get_shifts as gs, process_counts as pc
+from sofism_lib import process_measurement_joblib
+from sofism_lib.helpers import visualize, spad_sum_fig
+from sofism_lib.core import get_corrs, sofism
+from sofism_lib.params import Parameters
+import lifetimefit as lf
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 import numpy as np
 import sys
