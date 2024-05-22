@@ -187,10 +187,6 @@ def split_unwrap_dwells(meas_file, pixel, bin_width, dwell_time, laser_freq, ski
     tags_array[::2, :, :] = tags_array[::2, ::-1, :]
 
     return tags_array
-    
-    #tags = split_bin(px, dwell_time, bin_width, laser_freq, skip_first)
-    #return tags
-
 
 def split_dwells_continuous(meas_file, pixel, bin_width, dwell_time, laser_freq, skip_first):
     ref_bin_width = 0.01  # Reference bin width in ms
@@ -224,7 +220,6 @@ def split_dwells_continuous(meas_file, pixel, bin_width, dwell_time, laser_freq,
     tags_array[::2, :, :] = tags_array[::2, ::-1, :]
 
     return tags_array
-
 
 
 def read_tags(meas_file, bin_width, dwell_time, laser_freq, skip_first, num_bins):
