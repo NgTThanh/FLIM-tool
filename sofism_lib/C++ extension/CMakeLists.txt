@@ -6,9 +6,9 @@ add_executable(correlations corr.cpp)
 find_package(Python3 COMPONENTS Development NumPy REQUIRED)
 
 # Find Eigen
-include_directories(C:/Users/ngtua/Desktop/Corr/eigen)
-include_directories(C:/Users/ngtua/Desktop/Corr/build/pybind11/include)
-include_directories(C:/Users/ngtua/AppData/Local/Programs/Python/Python312/include)
+include_directories(Path/to/eigen)
+include_directories(Path/to/pybind11)
+include_directories(Path/to/python.h)
 
 find_package(Python3 REQUIRED COMPONENTS Interpreter Development NumPy)
 include_directories(${Python3_INCLUDE_DIRS} ${Python3_NumPy_INCLUDE_DIRS})
